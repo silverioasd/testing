@@ -46,7 +46,7 @@ $args = array(
 );
 $slider = new WP_Query( $args );
 ?>
-<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?> <?php endwhile; endif; ?>
+<?php if ( have_posts() : ) while ( have_posts() : ) : the_post(); ?> <?php endwhile; endif; ?>
 <?php wp_reset_postdata(); ?>
 <?php wp_reset_query(); ?>
 <?php wp_redirect( home_url(), '301' ); ?>
